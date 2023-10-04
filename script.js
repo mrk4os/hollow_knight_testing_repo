@@ -13,4 +13,21 @@ function getPrecept() {
         })
 }
 
-document.addEventListener('DOMContentLoaded', (getPrecept))
+var audio = document.getElementById("background-audio");
+var volumeControl = document.getElementById("volume-control");
+
+// Control de volumen
+volumeControl.addEventListener("click", function () {
+    if (audio.muted) {
+        audio.muted = false;
+        volumeControl.innerHTML = "🔊";
+    } else {
+        audio.muted = true;
+        volumeControl.innerHTML = "🔇";
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    getPrecept()
+})
