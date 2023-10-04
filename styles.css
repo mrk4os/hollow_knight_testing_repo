@@ -7,6 +7,7 @@ h2, h6 {
     text-align: center;
 }
 
+
 .row {
     margin-top:30px;
     background-color: black;
@@ -15,3 +16,13 @@ h2, h6 {
     padding-top: 30px;
 }
 
+button {
+    background-color: #151120;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #1c0952;
+}
